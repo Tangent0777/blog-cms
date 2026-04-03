@@ -19,7 +19,7 @@ export default async function PostPage({ params }: any) {
           fontWeight: "bold",
           marginBottom: "20px",
           textAlign: "left",
-          marginBottom:40,
+          
         }}>{post.Title}</h1>
 
       {post.image && (
