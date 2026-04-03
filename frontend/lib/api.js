@@ -47,7 +47,9 @@
 // }
 
 
-const API_URL = "http://localhost:1337/api"
+const API_URL = process.env.NEXT_PUBLIC_STRAPI_URL
+  ? `${process.env.NEXT_PUBLIC_STRAPI_URL}/api`
+  : "http://localhost:1337/api"
 
 // ✅ Get all posts
 export async function getPosts() {
