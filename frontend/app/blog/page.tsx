@@ -182,7 +182,7 @@ export default async function BlogPage() {
               {/* IMAGE */}
               {post.image && (
                 <img
-                  src={`http://localhost:1337${
+                  src={`${process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337'}${
                     post.image.formats?.small?.url || post.image.url
                   }`}
                   alt={post.Title}

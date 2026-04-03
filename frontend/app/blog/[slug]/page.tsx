@@ -27,7 +27,7 @@ export default async function PostPage({ params }: any) {
            
            
           <img
-          src={`http://localhost:1337${
+          src={`${process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337'}${
             post.image.formats?.medium?.url || post.image.url
           }`}
           alt={post.Title}
