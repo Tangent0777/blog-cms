@@ -1,4 +1,4 @@
-
+import type { JSX } from 'react';
 import { getPostBySlug } from "@/lib/api"
 
 
